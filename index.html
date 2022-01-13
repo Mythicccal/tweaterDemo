@@ -7,7 +7,7 @@
         <div class="flex flex-col">
             <div class="flex w-full">
                 <!--Side Nav-->
-                <div class="h-screen w-18 lg:w-48 min-w-18 flex flex-col mt-4 mb-4 ml-8 lg:mr-6 pr-8 border-r border-violet-200 justify-center items-center text-zinc-400 hidden lg:inline space-y-6">
+                <div class="h-screen w-48 min-w-18 flex flex-col mt-4 mr-8 pr-8 border-r border-violet-200 justify-center items-center text-zinc-400 hidden lg:inline space-y-6">
                     <div class="py-3">
                         <img class="cursor-pointer h-10 w-10 ring-2 ring-violet-500 ring-offset-2 rounded-full" src="https://picsum.photos/200" />
                     </div> 
@@ -15,7 +15,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 p-1 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                         </svg>
-                        <p class="ml-2 text-lg hidden lg:inline">Feeds</p>
+                        <p class="ml-2 text-lg">Feeds</p>
                     </div>
                     <div class="cursor-pointer flex hover:text-violet-500 hover:bg-violet-100 hover:font-semibold rounded-full items-center">
                         <div class="relative w-fit" >
@@ -24,7 +24,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
                             </svg>
                         </div>
-                        <p class="text-lg ml-2 hidden lg:inline">Notifications</p>
+                        <p class="text-lg ml-2">Notifications</p>
                     </div>
                     <div class="cursor-pointer flex hover:text-violet-500 hover:bg-violet-100 hover:font-semibold rounded-full items-center">
                         <div class="relative w-fit" >
@@ -33,27 +33,27 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
                             </svg>
                         </div>
-                        <p class="text-lg ml-2 hidden lg:inline">Messages</p>
+                        <p class="text-lg ml-2">Messages</p>
                     </div>
                     <div class="cursor-pointer flex hover:text-violet-500 hover:bg-violet-100 hover:font-semibold rounded-full items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 p-1 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14" />
                         </svg>
-                        <p class="text-lg ml-2 hidden lg:inline">Explore</p>
+                        <p class="text-lg ml-2">Explore</p>
                     </div>
                     <div class="cursor-pointer flex hover:text-violet-500 hover:bg-violet-100 hover:font-semibold rounded-full items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 p-1 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
                         </svg>
-                        <p class="text-lg ml-2 hidden lg:inline">New Post</p>
+                        <p class="text-lg ml-2">New Post</p>
                     </div>
                 </div>
 
                 <!--content body-->
-                <div class="flex w-full flex-col h-screen">
+                <div class="flex w-full flex-col h-screen max-w-screen-lg items-center lg:items-start">
                     
                     <!--search bar-->
-                    <div class="h-24 w-11/12 mt-6 mb-2 lg:mt-4 max-w-screen-md flex flex-col text-zinc-400">   
+                    <div class="h-24 w-10/12 mt-6 mb-2 lg:mt-4 flex flex-col text-zinc-400">   
                         <div class="flex justify-between">
                             <div class="flex space-x-1 cursor-pointer">
                                 <div class="text-3xl lg:text-2xl">Public Feed</div>
@@ -78,7 +78,7 @@
                     </div>
 
                     <!--posts-->
-                    <div class="h-full overflow-y-scroll overflow-x-hidden no-scrollbar border border-violet-200 w-11/12 max-w-screen-md flex flex-col mb-36 lg:mb-4">
+                    <div class="h-full overflow-y-scroll overflow-x-hidden no-scrollbar border border-violet-200 w-10/12 w-full flex flex-col mb-36 lg:mb-0">
                         <!--post-->
                         <div class="flex flex-col w-full border-b border-violet-200 min-h-fit">
                             <!--post header-->
